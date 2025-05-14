@@ -6,14 +6,14 @@ export const metadata: Metadata = {
 
 export default function About() {
 	return (
-		<div className="pt-6 md:pt-10">
-			<div className="mx-auto mb-4 w-fit">
+		<div className="pt-8 md:pt-16">
+			<div className="mx-auto mb-4 grid place-items-center gap-6">
 				<h1 className="font-semibold text-xl">About</h1>
-				<div>
-					<p className="my-3">
-						All data was sourced from government sources and is in no way a
-						complete representation of the political landscape. The information
-						provided should be used as a reference only.
+				<div className="justify-self-center">
+					<p className="my-3 max-w-md">
+						All data is sourced from official government records and is intended
+						for reference purposes only. Please note that it does not represent
+						a comprehensive view of the political landscape.
 					</p>
 					<div className="flex flex-col gap-2">
 						<a
