@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗳️ Florida-Elect
 
-## Getting Started
+**Florida-Elect** is a focused and transparent web resource dedicated to Florida elections. It provides clean, interactive visualizations of election results, candidates, demographics, campaign finance data, and more — all specifically for the state of Florida.
 
-First, run the development server:
+## 🌴 About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project aims to make Florida's electoral data easier to explore and understand, with a nonpartisan and accessible presentation. All data is sourced from official government databases and public filings.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔍 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ 2024 Florida Senate election results
+- 🧑‍🤝‍🧑 Candidate profiles and party affiliations
+- 📊 Voting statistics and turnout data
+- 🌎 Demographic insights by district
+- 💵 Contributor and campaign finance information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚧 Coming Soon
 
-## Learn More
+Work is in progress to expand support for:
 
-To learn more about Next.js, take a look at the following resources:
+- 🏛️ Florida House of Representatives elections
+- 🏫 Governor and other state executive races
+- ⚖️ Local and judicial elections
+- 🧠 Advanced filters and historical comparisons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Stay tuned!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Tech Stack
 
-## Deploy on Vercel
+- **Next.js** for a fast and scalable app
+- **Tailwind CSS** for styling
+- **PostgreSQL** for structured election data
+- **D3.js** for map projections and visualizations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📈 Data Sources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All election data is pulled from official state and federal sources including:
+
+- Florida Division of Elections
+- U.S. Census Bureau (for demographics)
+
+> ℹ️ Note: The information on this site is provided as a reference and may not fully represent the entire political landscape.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you're interested in improving Florida election transparency, feel free to open issues or pull requests.
+
+## 📫 Contact
+
+Have questions or suggestions? Open an issue and I'll be happy to discuss them.
+
+---
