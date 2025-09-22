@@ -2,7 +2,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	--font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+	--font-sans:
+		var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 	--color-party-republican: #e81b23;
@@ -129,7 +130,8 @@
 }
 
 @utility bg-gradient-btn-classic {
-	background-image: linear-gradient(to bottom, #0000 50%, var(--color-gray-a4)),
+	background-image:
+		linear-gradient(to bottom, #0000 50%, var(--color-gray-a4)),
 		linear-gradient(to bottom, #0000 50%, var(--color-accent-9) 80%);
 }
 

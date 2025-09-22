@@ -1,9 +1,9 @@
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
-import { candidates, elections, results } from "@/server/db/schema";
-import type { zElections } from "@/types";
 import { asc, eq, sql } from "drizzle-orm";
 import { alias } from "drizzle-orm/pg-core";
 import { z } from "zod";
+import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
+import { candidates, elections, results } from "@/server/db/schema";
+import type { zElections } from "@/types";
 
 type ElementType<T> = T extends (infer U)[] ? U : T;
 

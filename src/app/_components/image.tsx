@@ -25,6 +25,7 @@ export function Image({ fallBack, onError, alt, ...props }: ImageProps) {
 
 	return (
 		// biome-ignore lint/a11y/useAltText: handled by user
+		// biome-ignore lint/performance/noImgElement: Don't want to incur the Image element costs
 		<img onError={(e) => handleImgError(e, fallBack)} {...props} />
 	);
 }

@@ -1,7 +1,7 @@
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
-import { contributors } from "@/server/db/schema";
 import { and, desc, eq, lt } from "drizzle-orm";
 import { z } from "zod";
+import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
+import { contributors } from "@/server/db/schema";
 
 export const contributorRouter = createTRPCRouter({
 	infinite: publicProcedure
@@ -27,7 +27,7 @@ export const contributorRouter = createTRPCRouter({
 				.orderBy(desc(contributors.amount))
 				.limit(limit + 1);
 
-			let nextCursor: typeof input.cursor | undefined = undefined;
+			let nextCursor: typeof input.cursor | undefined;
 
 			if (data.length > limit) {
 				const nextItem = data.pop();

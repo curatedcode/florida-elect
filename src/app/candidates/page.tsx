@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import { CandidateCard } from "@/app/_components/candidate-card";
 import { api } from "@/trpc/server";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Candidates",

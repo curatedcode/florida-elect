@@ -1,5 +1,5 @@
-import { navLinks } from "@/app/_utils/nav-links";
 import Link from "next/link";
+import { navLinks } from "@/app/_utils/nav-links";
 
 export function Footer() {
 	return (

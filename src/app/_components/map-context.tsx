@@ -1,7 +1,7 @@
 "use client";
+import { createContext, useContext, useMemo, useState } from "react";
 import type { api } from "@/trpc/server";
 import type { zDistrictMapProperties } from "@/types/map";
-import { createContext, useContext, useMemo, useState } from "react";
 
 type ElementType<T> = T extends (infer U)[] ? U : T;
 type Election = ElementType<

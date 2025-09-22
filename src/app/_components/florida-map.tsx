@@ -1,4 +1,7 @@
 "use client";
+import * as d3 from "d3";
+import { useEffect, useRef } from "react";
+import { feature } from "topojson-client";
 import { useMapContext } from "@/app/_components/map-context";
 import { cn } from "@/app/_utils/cn";
 import type { zPartyAbbreviation } from "@/types";
@@ -7,9 +10,6 @@ import type {
 	zDistrictMapProperties,
 	zMapNames,
 } from "@/types/map";
-import * as d3 from "d3";
-import { useEffect, useRef } from "react";
-import { feature } from "topojson-client";
 
 export type FloridaMapProps = {
 	/**

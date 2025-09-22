@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { Image } from "@/app/_components/image";
 import { cn } from "@/app/_utils/cn";
 import { getPartyLabel } from "@/app/_utils/get-party-label";
 import type { zPartyAbbreviation } from "@/types";
-import Link from "next/link";
 
 export type CandidateCardProps = {
 	id: number;

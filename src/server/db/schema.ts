@@ -1,8 +1,6 @@
 // Example model schema from the Drizzle docs
 // https://orm.drizzle.team/docs/sql-schema-declaration
-import { zPartyAbbreviation } from "@/types";
-import { zElections } from "@/types";
-import { zStates } from "@/types/map";
+
 import { sql } from "drizzle-orm";
 import {
 	boolean,
@@ -15,6 +13,8 @@ import {
 	varchar,
 } from "drizzle-orm/pg-core";
 import { z } from "zod";
+import { zElections, zPartyAbbreviation } from "@/types";
+import { zStates } from "@/types/map";
 
 /**
  * This is an example of how to use the multi-project schema feature of Drizzle ORM. Use the same

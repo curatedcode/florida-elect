@@ -1,3 +1,9 @@
+import { eq } from "drizzle-orm";
+import { Flag } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { ContributionsTable } from "@/app/_components/contributions-table";
 import { Image } from "@/app/_components/image";
 import { cn } from "@/app/_utils/cn";
@@ -5,13 +11,7 @@ import { formatPercentage } from "@/app/_utils/format-percentage";
 import { getPartyLabel } from "@/app/_utils/get-party-label";
 import { db } from "@/server/db";
 import { candidates } from "@/server/db/schema";
-import { HydrateClient, api } from "@/trpc/server";
-import { eq } from "drizzle-orm";
-import { Flag } from "lucide-react";
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { Suspense } from "react";
+import { api, HydrateClient } from "@/trpc/server";
 
 type Props = { params: Promise<{ id: string }> };
 

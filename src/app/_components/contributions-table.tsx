@@ -1,9 +1,9 @@
 "use client";
 
+import { DollarSign } from "lucide-react";
 import { Button } from "@/app/_components/button";
 import { cn } from "@/app/_utils/cn";
 import { api } from "@/trpc/react";
-import { DollarSign } from "lucide-react";
 
 export type ContributionsTableProps = {
 	candidateId: number;

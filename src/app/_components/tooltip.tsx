@@ -1,12 +1,11 @@
 "use client";
 
-import { cn } from "@/app/_utils/cn";
 import {
-	FloatingPortal,
-	type Placement,
 	autoUpdate,
+	FloatingPortal,
 	flip,
 	offset,
+	type Placement,
 	shift,
 	useDismiss,
 	useFloating,
@@ -26,6 +25,7 @@ import {
 	useMemo,
 	useState,
 } from "react";
+import { cn } from "@/app/_utils/cn";
 
 interface TooltipOptions {
 	initialOpen?: boolean;
@@ -132,7 +132,7 @@ export const TooltipTrigger = forwardRef<
 	> & { asChild?: boolean }
 >(function TooltipTrigger({ children, asChild = false, ...props }, propRef) {
 	const context = useTooltipContext();
-	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+	// biome-ignore lint/suspicious/noExplicitAny: From floating-ui docs
 	const childrenRef = (children as any).ref;
 	const ref = useMergeRefs([context.refs.setReference, propRef, childrenRef]);
 

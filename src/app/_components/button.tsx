@@ -1,5 +1,5 @@
+import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/app/_utils/cn";
-import { type VariantProps, cva } from "class-variance-authority";
 
 const buttonCva = cva(
 	"inline-flex items-center justify-center rounded-sm font-medium text-sm leading-5 transition-colors focus-visible:outline-1 focus-visible:outline-accent-8 disabled:pointer-events-none disabled:opacity-60",

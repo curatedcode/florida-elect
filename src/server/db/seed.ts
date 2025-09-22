@@ -4,13 +4,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { createInterface } from "node:readline";
 import { fileURLToPath } from "node:url";
-import { env } from "@/env";
-import { zPartyAbbreviation } from "@/types";
-import { preparedMapDistricts } from "@/types/map";
 import { sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import sanitize from "sanitize-filename";
 import { allSeedData } from "seed-data/all-seed-data";
+import { env } from "@/env";
+import { zPartyAbbreviation } from "@/types";
+import { preparedMapDistricts } from "@/types/map";
 import {
 	candidates,
 	contributors,

@@ -1,10 +1,10 @@
 "use client";
 
-import { cn } from "@/app/_utils/cn";
-import { navLinks } from "@/app/_utils/nav-links";
 import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { cn } from "@/app/_utils/cn";
+import { navLinks } from "@/app/_utils/nav-links";
 
 export function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,6 +19,7 @@ export function Header() {
 			<div className="mx-auto max-w-6xl px-4 py-4">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center space-x-2">
+						{/** biome-ignore lint/performance/noImgElement: don't incur Image component costs */}
 						<img src="/favicon.svg" alt="Florida Elect" className="h-8 w-8" />
 						<h1 className="font-bold text-xl">Florida Elect</h1>
 					</Link>

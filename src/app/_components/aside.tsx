@@ -1,13 +1,13 @@
 "use client";
 
+import Link from "next/link";
+import type { z } from "zod";
 import { DistributionPill } from "@/app/_components/distribution-pill";
 import { useMapContext } from "@/app/_components/map-context";
 import { cn } from "@/app/_utils/cn";
 import { formatPercentage } from "@/app/_utils/format-percentage";
 import type { zElections } from "@/types";
 import type { zStates } from "@/types/map";
-import Link from "next/link";
-import type { z } from "zod";
 
 export type AsideProps = {
 	race: {

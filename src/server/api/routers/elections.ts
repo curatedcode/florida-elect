@@ -1,8 +1,8 @@
+import { and, eq, sql } from "drizzle-orm";
+import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
 import { candidates, districts, elections, results } from "@/server/db/schema";
 import { zElections } from "@/types";
-import { and, eq, sql } from "drizzle-orm";
-import { z } from "zod";
 
 export const electionRouter = createTRPCRouter({
 	/**
