@@ -1,12 +1,12 @@
-@custom-variant dark (&:where(.dark, .dark *));
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
 	--font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	
-	--color-party-republican: #E81B23;
-	--color-party-democrat: #00AEF3;
+
+	--color-party-republican: #e81b23;
+	--color-party-democrat: #00aef3;
 	--color-party-other: #24c41f;
 
 	--color-status-success: #00c950;
@@ -15,7 +15,7 @@
 
 @theme {
 	--color-background: #f9fafb;
-	
+
 	/* Usage - Backgrounds */
 	/* Pairs with - Steps 11, 12 text */
 	--color-accent-1: #f7f7f9;
@@ -60,15 +60,15 @@
 	--color-accent-a6: #b0cbff;
 	--color-accent-a7: #0255f064;
 	--color-accent-a8: #024ee787;
-  --color-accent-a9: #014ae9da;
-  --color-accent-a10: #0140cbdf;
-  --color-accent-a11: #013fc9e1;
-  --color-accent-a12: #001b55ea;
+	--color-accent-a9: #014ae9da;
+	--color-accent-a10: #0140cbdf;
+	--color-accent-a11: #013fc9e1;
+	--color-accent-a12: #001b55ea;
 
-  --color-accent-contrast: #fff;
-  --color-accent-surface: #eef1facc;
-  --color-accent-indicator: #2563eb;
-  --color-accent-track: #2563eb;
+	--color-accent-contrast: #fff;
+	--color-accent-surface: #eef1facc;
+	--color-accent-indicator: #2563eb;
+	--color-accent-track: #2563eb;
 
 	/* Gray scale */
 	--color-gray-1: #f6f7f9;
@@ -97,10 +97,10 @@
 	--color-gray-a11: #000b1da6;
 	--color-gray-a12: #010610e3;
 
-	--color-gray-contrast: #FFFFFF;
+	--color-gray-contrast: #ffffff;
 	--color-gray-surface: #ffffffcc;
 	--color-gray-indicator: #7e8698;
-	--color-gray-track: #7e8698;	
+	--color-gray-track: #7e8698;
 
 	--color-black-a1: #0000000d;
 	--color-black-a2: #0000001a;
@@ -129,13 +129,12 @@
 }
 
 @utility bg-gradient-btn-classic {
-	background-image: 
-		linear-gradient(to bottom,#0000 50%,var(--color-gray-a4)),
-		linear-gradient(to bottom,#0000 50%,var(--color-accent-9) 80%);
+	background-image: linear-gradient(to bottom, #0000 50%, var(--color-gray-a4)),
+		linear-gradient(to bottom, #0000 50%, var(--color-accent-9) 80%);
 }
 
 @utility shadow-btn-classic {
-	box-shadow: 
+	box-shadow:
 		inset 0 0 0 1px var(--color-gray-a4),
 		inset 0 -2px 1px var(--color-gray-a3),
 		inset 0 0 0 1px var(--color-accent-9),
@@ -151,42 +150,42 @@
 		inset 0 0 0 1px var(--color-accent-9),
 		inset 0 3px 2px var(--color-gray-a3),
 		inset 0 0 0 1px var(--color-white-a7),
-		inset 0 -2px 1px var(--color-white-a5)
+		inset 0 -2px 1px var(--color-white-a5);
 }
 
 @supports (color: color(display-p3 1 1 1)) {
 	@media (color-gamut: p3) {
 		@theme {
 			--color-accent-1: oklch(97.7% 0.0019 262.9);
-      --color-accent-2: oklch(96.5% 0.0092 262.9);
-      --color-accent-3: oklch(94.1% 0.0194 262.9);
-      --color-accent-4: oklch(91.5% 0.038 262.9);
-      --color-accent-5: oklch(88.2% 0.0573 262.9);
-      --color-accent-6: oklch(84% 0.0789 262.9);
-      --color-accent-7: oklch(78.3% 0.0968 262.9);
-      --color-accent-8: oklch(70.6% 0.1273 262.9);
-      --color-accent-9: oklch(54.6% 0.2152 262.9);
-      --color-accent-10: oklch(50% 0.1972 262.9);
-      --color-accent-11: oklch(49.3% 0.1972 262.9);
-      --color-accent-12: oklch(31.4% 0.0984 262.9);
+			--color-accent-2: oklch(96.5% 0.0092 262.9);
+			--color-accent-3: oklch(94.1% 0.0194 262.9);
+			--color-accent-4: oklch(91.5% 0.038 262.9);
+			--color-accent-5: oklch(88.2% 0.0573 262.9);
+			--color-accent-6: oklch(84% 0.0789 262.9);
+			--color-accent-7: oklch(78.3% 0.0968 262.9);
+			--color-accent-8: oklch(70.6% 0.1273 262.9);
+			--color-accent-9: oklch(54.6% 0.2152 262.9);
+			--color-accent-10: oklch(50% 0.1972 262.9);
+			--color-accent-11: oklch(49.3% 0.1972 262.9);
+			--color-accent-12: oklch(31.4% 0.0984 262.9);
 
-      --color-accent-a1: color(display-p3 0.3255 0 0.3333 / 0.012);
-      --color-accent-a2: color(display-p3 0.0275 0.149 0.749 / 0.033);
-      --color-accent-a3: color(display-p3 0.0118 0.2706 0.8353 / 0.077);
-      --color-accent-a4: color(display-p3 0.0039 0.3137 0.9843 / 0.129);
-      --color-accent-a5: color(display-p3 0.2078 0.4471 1 / 0.25);
-      --color-accent-a6: color(display-p3 0.0039 0.2902 0.9843 / 0.274);
-      --color-accent-a7: color(display-p3 0.0039 0.2627 0.8902 / 0.362);
-      --color-accent-a8: color(display-p3 0.0039 0.2431 0.851 / 0.49);
-      --color-accent-a9: color(display-p3 0 0.2196 0.8667 / 0.784);
-      --color-accent-a10: color(display-p3 0 0.1882 0.749 / 0.812);
-      --color-accent-a11: color(display-p3 0 0.1843 0.7412 / 0.816);
-      --color-accent-a12: color(display-p3 0 0.0784 0.302 / 0.892);
+			--color-accent-a1: color(display-p3 0.3255 0 0.3333 / 0.012);
+			--color-accent-a2: color(display-p3 0.0275 0.149 0.749 / 0.033);
+			--color-accent-a3: color(display-p3 0.0118 0.2706 0.8353 / 0.077);
+			--color-accent-a4: color(display-p3 0.0039 0.3137 0.9843 / 0.129);
+			--color-accent-a5: color(display-p3 0.2078 0.4471 1 / 0.25);
+			--color-accent-a6: color(display-p3 0.0039 0.2902 0.9843 / 0.274);
+			--color-accent-a7: color(display-p3 0.0039 0.2627 0.8902 / 0.362);
+			--color-accent-a8: color(display-p3 0.0039 0.2431 0.851 / 0.49);
+			--color-accent-a9: color(display-p3 0 0.2196 0.8667 / 0.784);
+			--color-accent-a10: color(display-p3 0 0.1882 0.749 / 0.812);
+			--color-accent-a11: color(display-p3 0 0.1843 0.7412 / 0.816);
+			--color-accent-a12: color(display-p3 0 0.0784 0.302 / 0.892);
 
-      --color-accent-contrast: #fff;
-      --color-accent-surface: color(display-p3 0.9373 0.9451 0.9765 / 0.8);
-      --color-accent-indicator: oklch(54.6% 0.2152 262.9);
-      --color-accent-track: oklch(54.6% 0.2152 262.9);
+			--color-accent-contrast: #fff;
+			--color-accent-surface: color(display-p3 0.9373 0.9451 0.9765 / 0.8);
+			--color-accent-indicator: oklch(54.6% 0.2152 262.9);
+			--color-accent-track: oklch(54.6% 0.2152 262.9);
 
 			/* Gray scale */
 			--color-gray-1: oklch(97.5% 0.0026 264.4);
@@ -215,7 +214,7 @@
 			--color-gray-a11: color(display-p3 0 0.0353 0.1059 / 0.647);
 			--color-gray-a12: color(display-p3 0 0.0118 0.0549 / 0.884);
 
-			--color-gray-contrast: #FFFFFF;
+			--color-gray-contrast: #ffffff;
 			--color-gray-surface: color(display-p3 1 1 1 / 80%);
 			--color-gray-indicator: oklch(62% 0.0284 264.4);
 			--color-gray-track: oklch(62% 0.0284 264.4);
@@ -223,12 +222,10 @@
 	}
 }
 
-
-
 @layer base {
 	@variant dark {
 		--color-background: #111827;
-		
+
 		--color-accent-1: #121924;
 		--color-accent-2: #131c29;
 		--color-accent-3: #142849;
@@ -241,7 +238,7 @@
 		--color-accent-10: #2e75e8;
 		--color-accent-11: #85b5ff;
 		--color-accent-12: #d0e2ff;
-	
+
 		--color-accent-a1: #91980002;
 		--color-accent-a2: #78e58e05;
 		--color-accent-a3: #247cfb29;
@@ -254,7 +251,7 @@
 		--color-accent-a10: #3180ffe4;
 		--color-accent-a11: #85b5ff;
 		--color-accent-a12: #d0e2ff;
-	
+
 		--color-accent-contrast: #fff;
 		--color-accent-surface: #15202b80;
 		--color-accent-indicator: #3b82f6;
@@ -287,11 +284,11 @@
 		--color-gray-a11: #edf4ffb5;
 		--color-gray-a12: #fafcfff0;
 
-		--color-gray-contrast: #FFFFFF;
+		--color-gray-contrast: #ffffff;
 		--color-gray-surface: rgba(0, 0, 0, 0.05);
 		--color-gray-indicator: #656e7f;
 		--color-gray-track: #656e7f;
-		
+
 		@supports (color: color(display-p3 1 1 1)) {
 			@media (color-gamut: p3) {
 				--color-accent-1: oklch(21% 0.0246 259.8);
@@ -306,7 +303,7 @@
 				--color-accent-10: oklch(58.2% 0.188 259.8);
 				--color-accent-11: oklch(77.2% 0.1255 259.8);
 				--color-accent-12: oklch(90.9% 0.0454 259.8);
-	
+
 				--color-accent-a1: color(display-p3 0.8549 0.8824 0 / 0.005);
 				--color-accent-a2: color(display-p3 0.7255 0.9686 0.5882 / 0.018);
 				--color-accent-a3: color(display-p3 0.251 0.4824 0.9961 / 0.153);
@@ -319,7 +316,7 @@
 				--color-accent-a10: color(display-p3 0.2902 0.5137 1 / 0.858);
 				--color-accent-a11: color(display-p3 0.5765 0.7216 1 / 0.973);
 				--color-accent-a12: color(display-p3 0.8392 0.8941 1 / 0.987);
-	
+
 				--color-accent-contrast: #fff;
 				--color-accent-surface: color(display-p3 0.0941 0.1176 0.1647 / 0.5);
 				--color-accent-indicator: oklch(62.3% 0.188 259.8);
@@ -352,11 +349,11 @@
 				--color-gray-a11: color(display-p3 0.9373 0.9608 1 / 0.706);
 				--color-gray-a12: color(display-p3 0.9804 0.9882 1 / 0.941);
 
-				--color-gray-contrast: #FFFFFF;
+				--color-gray-contrast: #ffffff;
 				--color-gray-surface: color(display-p3 0 0 0 / 5%);
 				--color-gray-indicator: oklch(53.7% 0.028 261.3);
 				--color-gray-track: oklch(53.7% 0.028 261.3);
 			}
-		}	
+		}
 	}
 }
