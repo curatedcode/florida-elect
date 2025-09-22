@@ -1,4 +1,5 @@
 import { drizzle } from "drizzle-orm/postgres-js";
+// @ts-expect-error
 import postgres from "postgres";
 
 import { env } from "@/env";

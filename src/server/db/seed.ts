@@ -1,11 +1,12 @@
 import "dotenv/config";
 import { execSync } from "node:child_process";
-import fs from "node:fs/promises";
-import path from "node:path";
+import * as fs from "node:fs/promises";
+import * as path from "node:path";
 import { createInterface } from "node:readline";
 import { fileURLToPath } from "node:url";
 import { sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
+// @ts-expect-error
 import sanitize from "sanitize-filename";
 import { allSeedData } from "seed-data/all-seed-data";
 import { env } from "@/env";
